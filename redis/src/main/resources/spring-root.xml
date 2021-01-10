@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:redis="http://www.springframework.org/schema/redis"
+	xsi:schemaLocation="http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.1.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/redis http://www.springframework.org/schema/redis/spring-redis-1.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+	
+	<context:component-scan base-package="com.oracle">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+
+	<!--<context:component-scan base-package="org.springframework.web.filter.DelegatingFilterProxy"/>-->
+
+	<context:property-placeholder location="classpath:db.properties" ignore-resource-not-found="true" ignore-unresolvable="true"/>
+	<!--读取redis 连接信息的配置-->
+	<context:property-placeholder location="classpath:redis.properties" ignore-resource-not-found="true" ignore-unresolvable="true"/>
+	
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxIdle" value="${redis.maxIdle}" />
+        <property name="maxWaitMillis" value="${redis.maxWait}" />
+        <property name="testOnBorrow" value="${redis.testOnBorrow}" />
+        <property name="maxTotal" value="${redis.maxTotal}" /> 
+        <property name="blockWhenExhausted" value="true" /> 
+	</bean>
+	
+	<!-- jedis连接工程的配置 -->
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"> 
+        <property name="hostName" value="${redis.host}" />
+        <property name="port" value="${redis.port}" />
+        <property name="poolConfig" ref="jedisPoolConfig" /> 
+        <!-- <property name="password" value="${redis.password}" /> -->
+        <property name="usePool" value="true"/> 
+        <property name="timeout" value="${redis.timeout}"></property>
+    </bean> 
+
+    <!-- redisTemplate配置 -->
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">   
+        <property name="connectionFactory"   ref="jedisConnectionFactory" />  
+        <property name="keySerializer">   
+            <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />   
+        </property>      
+        <property name="valueSerializer">   
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />   
+        </property>   
+        <property name="hashKeySerializer">     
+           <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>     
+        </property>   
+        <property name="hashValueSerializer">   
+           <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>     
+        </property> 
+     </bean> 
+	
+
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialPoolSize" value="${connection_pools.initial_pool_size}" />
+		<property name="minPoolSize" value="${connection_pools.min_pool_size}" />
+		<property name="maxPoolSize" value="${connection_pools.max_pool_size}" />
+		<property name="maxIdleTime" value="${connection_pools.max_idle_time}" />
+		<property name="acquireIncrement" value="${connection_pools.acquire_increment}" />
+		<property name="checkoutTimeout" value="${connection_pools.checkout_timeout}" />
+	</bean>
+	
+	<!-- 配置MyBatis的sqlSession -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- <property name="configLocation" value="classpath:mybatis.xml"></property> -->
+		<property name="dataSource" ref="dataSource" />
+		<!--<property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>-->
+	</bean>
+	
+	<!-- 事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<!-- xml  aop事物方式 -->
+	<aop:config>
+	<!-- 切入点 -->
+	<aop:pointcut expression="execution (* com.oracle.service.*.*(..))" id="serviceMethodAOP"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethodAOP"/>
+	</aop:config>
+	
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+		<!-- 方法名称 以  add加入事物处理    addGoods  updateGoods-->
+			<tx:method name="insert*" propagation="REQUIRED" rollback-for="RunTimeException"/>
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="RunTimeException"/>
+			<tx:method name="delete*" propagation="REQUIRED" rollback-for="RunTimeException"/>
+			<tx:method name="get*" propagation="NOT_SUPPORTED" rollback-for="RunTimeException" read-only="true"/>
+			<tx:method name="select*" propagation="NOT_SUPPORTED" rollback-for="RunTimeException" read-only="true"/>
+			<tx:method name="find*" propagation="NOT_SUPPORTED" rollback-for="RunTimeException" read-only="true"/>
+		</tx:attributes>
+	</tx:advice>
+	
+	
+	<!-- 映射Mapper目录 -->
+	<!-- Mapper接口所在包名，Spring会自动查找其下的Mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.oracle.mapper" />
+	</bean>
+	<!-- <config id="sessionUtils" class="com.oracle.config.SessionUtils"></config> -->
+</beans>

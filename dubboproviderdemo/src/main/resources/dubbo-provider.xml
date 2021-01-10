@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+<!--应用服务提供方  和消费方不同-->
+    <dubbo:application name="dubbo-provider"/>
+    <!--服务的暴漏端口和协议  dubbo是默认-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+    <!--注册中心  地址为zookeeper的地址-->
+    <dubbo:registry address="zookeeper://192.168.125.5:2181?backup=192.168.125.6:2181,192.168.125.7:2181"/>
+    <dubbo:service interface="com.oracle.service.DubboService" ref="dubboServiceImpl"/>
+
+    <bean id="dubboServiceImpl" class="com.oracle.service.DubboServiceImpl"></bean>
+</beans>

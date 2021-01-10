@@ -1,0 +1,174 @@
+12:14 19:05:11.256 [restartedMain] INFO  c.o.a.SpringBootApplication - Starting SpringBootApplication on DESKTOP-GFQENC7 with PID 10180 (C:\learning\IdeaProjects\frame111\springboot\target\classes started by yky in C:\learning\IdeaProjects\frame111)
+12:14 19:05:11.267 [restartedMain] INFO  c.o.a.SpringBootApplication - No active profile set, falling back to default profiles: default
+12:14 19:05:11.706 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:14 19:05:11.706 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:14 19:05:19.462 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:14 19:05:19.529 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+12:14 19:05:19.684 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+12:14 19:05:21.263 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a6cd6662] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:14 19:05:27.499 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14 19:05:27.630 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14 19:05:27.651 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:14 19:05:27.652 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+12:14 19:05:28.107 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:14 19:05:28.108 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 16401 ms
+12:14 19:05:29.025 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+12:14 19:05:29.485 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:14 19:05:34.387 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+12:14 19:05:39.714 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:14 19:05:41.627 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:14 19:05:41.834 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [192.168.125.7:5672]
+12:14 19:05:42.051 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4a3dfb6c:0/SimpleConnection@6a8fd3ed [delegate=amqp://guest@192.168.125.7:5672/, localPort= 54609]
+12:14 19:05:42.659 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:14 19:05:42.709 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:14 19:05:42.715 [restartedMain] INFO  c.o.a.SpringBootApplication - Started SpringBootApplication in 36.25 seconds (JVM running for 52.546)
+12:14 19:08:44.391 [http-nio-8080-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:14 19:08:44.393 [http-nio-8080-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:14 19:08:44.413 [http-nio-8080-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+12:14 19:10:24.214 [restartedMain] INFO  c.o.a.SpringBootApplication - Starting SpringBootApplication on DESKTOP-GFQENC7 with PID 8116 (C:\learning\IdeaProjects\frame111\springboot\target\classes started by yky in C:\learning\IdeaProjects\frame111)
+12:14 19:10:24.220 [restartedMain] INFO  c.o.a.SpringBootApplication - No active profile set, falling back to default profiles: default
+12:14 19:10:24.346 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:14 19:10:24.346 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:14 19:10:27.203 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:14 19:10:27.210 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+12:14 19:10:27.272 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+12:14 19:10:29.359 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7a05f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:14 19:10:32.132 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14 19:10:32.169 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14 19:10:32.287 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:14 19:10:32.287 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+12:14 19:10:32.981 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:14 19:10:32.982 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8636 ms
+12:14 19:10:33.318 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+12:14 19:10:33.570 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:14 19:10:35.112 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+12:14 19:10:36.666 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:14 19:10:37.782 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:14 19:10:37.966 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [192.168.125.7:5672]
+12:14 19:10:38.156 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#391be84f:0/SimpleConnection@1357db4f [delegate=amqp://guest@192.168.125.7:5672/, localPort= 54971]
+12:14 19:10:38.254 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:14 19:10:38.299 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:14 19:10:38.311 [restartedMain] INFO  c.o.a.SpringBootApplication - Started SpringBootApplication in 15.363 seconds (JVM running for 16.982)
+12:14 19:10:59.429 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:14 19:10:59.430 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:14 19:10:59.447 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+12:14 19:15:05.757 [Thread-6] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+12:14 19:15:06.604 [Thread-6] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+12:14 19:15:06.621 [Thread-6] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+12:14 19:15:06.629 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+12:14 19:15:06.681 [Thread-6] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+12:14 19:15:06.757 [Thread-6] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+12:14 19:15:06.784 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService
+12:14 19:15:08.410 [restartedMain] INFO  c.o.a.SpringBootApplication - Starting SpringBootApplication on DESKTOP-GFQENC7 with PID 8116 (C:\learning\IdeaProjects\frame111\springboot\target\classes started by yky in C:\learning\IdeaProjects\frame111)
+12:14 19:15:08.411 [restartedMain] INFO  c.o.a.SpringBootApplication - No active profile set, falling back to default profiles: default
+12:14 19:15:09.586 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:14 19:15:09.588 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+12:14 19:15:09.653 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63ms. Found 0 repository interfaces.
+12:14 19:15:09.868 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7a05f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:14 19:15:10.151 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14 19:15:10.155 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14 19:15:10.156 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:14 19:15:10.157 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+12:14 19:15:10.228 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:14 19:15:10.228 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1811 ms
+12:14 19:15:10.310 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+12:14 19:15:10.371 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:14 19:15:11.630 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+12:14 19:15:12.498 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:14 19:15:12.962 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:14 19:15:13.139 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [192.168.125.7:5672]
+12:14 19:15:13.226 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#205b76fb:0/SimpleConnection@48b18697 [delegate=amqp://guest@192.168.125.7:5672/, localPort= 55328]
+12:14 19:15:13.461 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:14 19:15:13.467 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:14 19:15:13.478 [restartedMain] INFO  c.o.a.SpringBootApplication - Started SpringBootApplication in 5.311 seconds (JVM running for 292.149)
+12:14 19:15:13.484 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:14 19:15:59.225 [Thread-10] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+12:14 19:15:59.582 [Thread-10] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+12:14 19:15:59.583 [Thread-10] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+12:14 19:15:59.584 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+12:14 19:15:59.589 [Thread-10] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
+12:14 19:15:59.611 [Thread-10] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+12:14 19:15:59.613 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService
+12:14 19:16:00.589 [restartedMain] INFO  c.o.a.SpringBootApplication - Starting SpringBootApplication on DESKTOP-GFQENC7 with PID 8116 (C:\learning\IdeaProjects\frame111\springboot\target\classes started by yky in C:\learning\IdeaProjects\frame111)
+12:14 19:16:00.589 [restartedMain] INFO  c.o.a.SpringBootApplication - No active profile set, falling back to default profiles: default
+12:14 19:16:01.482 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:14 19:16:01.483 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+12:14 19:16:01.524 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 repository interfaces.
+12:14 19:16:01.691 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7a05f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:14 19:16:01.971 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14 19:16:01.973 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14 19:16:01.974 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:14 19:16:01.974 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+12:14 19:16:02.065 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:14 19:16:02.065 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1458 ms
+12:14 19:16:02.121 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+12:14 19:16:02.152 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:14 19:16:04.530 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+12:14 19:16:05.435 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:14 19:16:05.825 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:14 19:16:05.861 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [192.168.125.7:5672]
+12:14 19:16:05.877 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#73a1aab:0/SimpleConnection@4e30c202 [delegate=amqp://guest@192.168.125.7:5672/, localPort= 55394]
+12:14 19:16:06.137 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:14 19:16:06.143 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:14 19:16:06.143 [restartedMain] INFO  c.o.a.SpringBootApplication - Started SpringBootApplication in 5.671 seconds (JVM running for 344.814)
+12:14 19:16:06.146 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:14 19:16:50.013 [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+12:14 19:16:50.207 [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+12:14 19:16:50.208 [Thread-16] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+12:14 19:16:50.209 [Thread-16] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+12:14 19:16:50.212 [Thread-16] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-3} closing ...
+12:14 19:16:50.225 [Thread-16] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+12:14 19:16:50.226 [Thread-16] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService
+12:14 19:16:51.161 [restartedMain] INFO  c.o.a.SpringBootApplication - Starting SpringBootApplication on DESKTOP-GFQENC7 with PID 8116 (C:\learning\IdeaProjects\frame111\springboot\target\classes started by yky in C:\learning\IdeaProjects\frame111)
+12:14 19:16:51.161 [restartedMain] INFO  c.o.a.SpringBootApplication - No active profile set, falling back to default profiles: default
+12:14 19:16:52.439 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:14 19:16:52.440 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+12:14 19:16:52.480 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
+12:14 19:16:52.620 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7a05f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:14 19:16:53.212 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14 19:16:53.213 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14 19:16:53.214 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:14 19:16:53.214 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+12:14 19:16:53.274 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:14 19:16:53.274 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2106 ms
+12:14 19:16:53.324 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+12:14 19:16:53.359 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:14 19:16:54.150 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+12:14 19:16:54.733 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:14 19:16:55.009 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:14 19:16:55.041 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [192.168.125.7:5672]
+12:14 19:16:55.067 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#35247ce:0/SimpleConnection@495ec754 [delegate=amqp://guest@192.168.125.7:5672/, localPort= 55481]
+12:14 19:16:55.092 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:14 19:16:55.103 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:14 19:16:55.103 [restartedMain] INFO  c.o.a.SpringBootApplication - Started SpringBootApplication in 4.116 seconds (JVM running for 393.774)
+12:14 19:16:55.108 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:14 19:16:58.664 [Thread-22] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+12:14 19:16:59.136 [Thread-22] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+12:14 19:16:59.138 [Thread-22] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+12:14 19:16:59.143 [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+12:14 19:16:59.157 [Thread-22] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-4} closing ...
+12:14 19:16:59.170 [Thread-22] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+12:14 19:16:59.171 [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService
+12:14 19:17:00.398 [restartedMain] INFO  c.o.a.SpringBootApplication - Starting SpringBootApplication on DESKTOP-GFQENC7 with PID 8116 (C:\learning\IdeaProjects\frame111\springboot\target\classes started by yky in C:\learning\IdeaProjects\frame111)
+12:14 19:17:00.398 [restartedMain] INFO  c.o.a.SpringBootApplication - No active profile set, falling back to default profiles: default
+12:14 19:17:01.189 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+12:14 19:17:01.191 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+12:14 19:17:01.227 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+12:14 19:17:01.315 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7a05f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:14 19:17:01.463 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:14 19:17:01.464 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:14 19:17:01.465 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:14 19:17:01.465 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+12:14 19:17:01.585 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:14 19:17:01.585 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1181 ms
+12:14 19:17:01.745 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+12:14 19:17:01.782 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+12:14 19:17:02.588 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-5} inited
+12:14 19:17:03.116 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:14 19:17:03.290 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:14 19:17:03.314 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [192.168.125.7:5672]
+12:14 19:17:03.322 [restartedMain] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#471bd146:0/SimpleConnection@493a0bc8 [delegate=amqp://guest@192.168.125.7:5672/, localPort= 55507]
+12:14 19:17:03.343 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:14 19:17:03.348 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:14 19:17:03.349 [restartedMain] INFO  c.o.a.SpringBootApplication - Started SpringBootApplication in 3.216 seconds (JVM running for 402.019)
+12:14 19:17:03.351 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
